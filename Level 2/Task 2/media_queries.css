@@ -1,0 +1,44 @@
+/* Media Queries */
+@media (min-width: 600px) {
+    main {
+        flex-wrap: nowrap;
+    }
+
+    section {
+        flex: 3;
+    }
+
+    aside {
+        flex: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    nav ul li {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1024px) {
+    header, footer {
+        text-align: left;
+        padding: 2rem;
+    }
+
+    nav ul {
+        float: right;
+    }
+
+    nav ul li {
+        margin: 0 1.5rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    section, aside {
+        margin: 1rem;
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,108 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    padding: 10px;
+    border-radius: 35px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: grey;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+section,
+aside {
+    flex: 1 1 100%;
+    margin: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+    main {
+        flex-wrap: nowrap;
+    }
+
+    section {
+        flex: 3;
+    }
+
+    aside {
+        flex: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    nav ul li {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    header,
+    footer {
+        text-align: center;
+        padding: 2rem;
+    }
+
+
+    nav ul li {
+        margin: 0 1.5rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    section,
+    aside {
+        margin: 1rem;
+        padding: 2rem;
+    }
+}

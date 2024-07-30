@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1 Task 2 Part 2</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .button{
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border-radius: 35px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Greeting Based on Time</h1>
+    <button class="button" onclick="displayGreeting()">Click me</button>
+    <script>
+        function displayGreeting(){
+            var today = new Date();
+            var hour = today.getHours();
+            var greeting;
+            if (hour <12){
+                greeting = "Good Morning!";
+            }
+            else if (hour < 18){
+                greeting = "Good Afternoon!";
+            }
+            else{
+                greeting = "Good Evening!";
+            }
+            alert(greeting);
+        }
+    </script>
+</body>
+</html>
